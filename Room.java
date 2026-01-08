@@ -1,18 +1,30 @@
 public class Room {
-    private int number; // UML mein 'number' attribute hai 
+    private int number; 
+    private boolean isOccupied; 
 
-    // Constructor: Jab naya room banayenge toh ye check karega ke data sahi hai
     public Room(int number) {
+      
         if (number <= 0) {
-    
             throw new IllegalArgumentException("Room number must be positive");
         }
         this.number = number;
+        this.isOccupied = false; 
     }
 
+    
     public int getNumber() { return number; }
+    public int getRoomNumber() { return number; }
 
-    // UML Method 
+    
+    public boolean isOccupied() {
+        return isOccupied;
+    }
+
+    
+    public void setOccupied(boolean status) {
+        this.isOccupied = status;
+    }
+
     public void createGuest() {
         System.out.println("Guest created for Room: " + number);
     }

@@ -10,14 +10,14 @@ public class RoomTest {
     }
 
     public static void testRoomCreationSuccess() {
-        // 1. Arrange (Setup data)
+       
         int validNumber = 105;
 
-        // 2. Act (Execute the code)
+       
         Room room = new Room(validNumber);
 
-        // 3. Assert (Check if it works)
-        if (room.getNumber() == 105) {
+        
+        if (room.getRoomNumber() == 105) {
             System.out.println("Test Room Creation Success: PASSED ✅");
         } else {
             System.out.println("Test Room Creation Success: FAILED ❌");
@@ -25,10 +25,10 @@ public class RoomTest {
     }
 
     public static void testRoomCreationFailure() {
-        // Arrange
+       
         int invalidNumber = -1;
 
-        // Act & Assert (Testing Defensive Programming)
+        
         try {
             new Room(invalidNumber);
             System.out.println("Test Defensive Programming: FAILED ❌ (Should have thrown error)");

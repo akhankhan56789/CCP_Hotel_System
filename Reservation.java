@@ -7,7 +7,7 @@ public class Reservation {
     private Room room;
 
     public Reservation(String id, Guest guest, Room room) {
-        // Defensive Programming: Checks for null or empty values
+        
         if (id == null || id.isEmpty() || guest == null || room == null) {
             throw new IllegalArgumentException("Reservation details cannot be empty or null");
         }
@@ -19,6 +19,6 @@ public class Reservation {
     public void displayReservation() {
         System.out.println("Reservation ID: " + reservationId);
         System.out.println("Guest: " + guest.getName());
-        System.out.println("Room Number: " + room.getNumber());
+        System.out.println("Room Number: " + room.getRoomNumber());
     }
 }
