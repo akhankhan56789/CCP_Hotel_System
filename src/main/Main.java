@@ -2,7 +2,7 @@ package src.main;
 
 public class Main {
     public static void main(String[] args) {
-        // Bina "M." ke name rakha hai taake test match karein
+        
         ReserverPayer payer = new ReserverPayer("Arbaz Khan", 5000.0);
         RoomType roomType = new RoomType("Executive Suite", 2500.0);
         Room myRoom = new Room(786);
