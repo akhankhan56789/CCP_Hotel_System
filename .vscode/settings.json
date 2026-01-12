@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\ARBAZ\\Downloads\\junit-platform-console-standalone-1.10.0.jar",
+        "lib/junit-platform-console-standalone-1.10.0.jar"
+    ]
+}
